@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <title> Kanban Board</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="changeColor">
+        <div class="colors fristColor" id="color_one"></div>
+        <div class="colors secondColor" id="color_two"></div>
+        <div class="colors ThirdColor" id="color_three"></div>
+        <div class="colors fourthColor" id="color_four"></div>
+    </div>
+    <div class="container">
+        <h1>Kanban Board</h1>
+        <div class="headeres">
+        </div>
+        <div class="tasks_containers">
+            <div class="box" id="ready">
+                <h2>not started</h2>
+                <div class="tasks readyTask"></div>
+
+                    <button class="add" id="fr_add">+ Add</button>
+            </div>
+            <div class="box" id="progress">
+                <h2>in progress</h2>
+            <div class="tasks progressTask"></div>
+                <button class="add" id="sec_add">+ Add</button>
+            </div>
+            <div class="box" id="compeletd">
+                <h2>compeletd</h2>
+                <div class="tasks compeletdTask"></div>
+                <button class="add" id="thirtd_add">+ Add</button>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popupcontainer">
+                <input type="text" name="addInput" id="addInput" >
+                <button class="btnAdd">+ Add</button>
+                <button class="btnCancel">x</button>
+            </div>
+        </div>
+            
+            <div class="clearAll">Delete All Tasks</div>
+            <div class="clearContainer">
+                <div class="textClear">Are You Sure Delete All Tasks?</div>
+                <div class="btnClear">
+                    <button id="DeleteAllTasks">Delete All</button>
+                    <button id="CancelDelete">Cancel</button>
+                </div>
+            </div>
+        </div>
+    <script src="js/script.JS"></script>
+</body>
+</html>
